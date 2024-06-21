@@ -17,3 +17,9 @@
   - 項目ごとにスキーマと入力値、バリデーションを管理する state を用意する
   - useEffect で state を監視し、初期値じゃなければ safeParse で検証する
   - safeParse でエラーになった場合 state のエラーのフィールドを更新する
+
+## 参考文献
+
+- [React19 導入ガイド](https://ja.react.dev/blog/2024/04/25/react-19-upgrade-guide)
+- [useActionState ガイド](https://ja.react.dev/reference/react/useActionState)
+- [form ガイド](https://ja.react.dev/reference/react-dom/components/form)
