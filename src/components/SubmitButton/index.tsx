@@ -1,7 +1,11 @@
-import React from 'react'
+type Props = {
+  pending: boolean;
+};
 
-export const SubmitButton = () => {
+export const SubmitButton = ({ pending }: Props) => {
   return (
-    <div>index</div>
-  )
-}
+    <button type="submit" disabled={pending}>
+      {pending ? 'pending' : 'submit'}
+    </button>
+  );
+};
