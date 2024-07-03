@@ -17,3 +17,11 @@ export const TestFormScheme = z.object({
     .regex(REGEXP, { message: '数値を入力してください。' })
     .optional(),
 });
+
+export const NameFiledSchema = TestFormScheme.pick({ name: true });
+
+export const EmailFiledSchema = TestFormScheme.pick({ email: true });
+
+export const TestFiledSchema = TestFormScheme.pick({ test: true });
+
+export const NumberFiledSchema = TestFormScheme.pick({ number: true });

@@ -9,7 +9,7 @@ export const errors = {
 
 export type FieldErrors = Record<string, { message: string }>;
 
-type Error = {
+export type Error = {
   message: string;
   status: number;
   fieldErrors?: FieldErrors;
